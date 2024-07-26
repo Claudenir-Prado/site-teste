@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background-color: azure;
+  overflow-x: hidden;
+} /*
+.conteudo {
+  width: 100%;
+  height: auto;
+}*/
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  background-color: #4f4f4f;
+  top: 10px;
+  bottom: 10px;
+}
+.nome-microsoft {
+  width: 200px;
+  height: 50px;
+  margin-left: 30px;
+  font-size: 18px;
+}
+.root-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  font-size: 20px;
+}
+.header .root-container .logo {
+  height: 25px;
+  font-size: 20px;
+  margin-right: 30px;
+}
+.header .root-container button {
+  border: solid 1px black;
+}
+
+.header .root-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .root-container .search {
+  font-size: 20px;
+  color: inherit;
+}
+
+.header .root-container .search img {
+  width: 30px;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  background-color: grey;
+}
+.nav-bar .nav {
+  width: 100%;
+  height: auto;
+}
+.nav-bar .nav .listas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+.nav-bar .nav .listas .list {
+  list-style: none;
+  width: 100%;
+  height: auto;
+}
+.nav-bar .nav .listas .list a {
+  width: 100%;
+  height: auto;
+  text-decoration: none;
+  font-family: "Roboto" sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: azure;
+}
+
+.titulo {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: azure;
+  margin-left: 40px;
+}
+.imagens img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.conteudo {
+  margin-top: 20px;
+  max-width: 100%;
+  height: 100%;
+}
+.cont {
+  width: 100vw;
+  height: 100%;
+}
+.conteudo .cont img {
+  max-width: 100%;
+  height: auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 220px 220px 220px;
+  grid-auto-rows: 200px;
+  gap: 15px;
+  background-color: azure;
+  border: solid 3px black;
+  margin-top: 20px;
+  row-gap: 15px;
+  overflow-y: hidden;
+}
+.imagens {
+  background-color: blueviolet;
+  width: 100%;
+}
+.grid .imagens {
+  width: 100%;
+}
+.grid .imagens img {
+  height: 220px;
+  background-size: cover;
+  margin-bottom: 15px;
+}
+
+.rodape {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+  background-color: beige;
+}
+.rodape p {
+  font-family: "Roboto" sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  list-style: none;
+}
+.rodape a {
+  text-decoration: none;
+  color: inherit;
+}
+@media (min-width: 768px) and (max-width: 1024) {
+  .conteudo .nav-bar {
+    max-width: 768px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 130px;
+    background-color: grey;
+  }
+  .conteudo .nav-bar .nav {
+    max-width: 768px;
+  }
+  .conteudo .nav-bar .nav .listas {
+    max-width: 768px;
+    margin-right: 50px;
+  }
+  .conteudo .nav-bar .nav .listas .list {
+    max-width: 768px;
+    margin-left: 10px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 220px 220px 220px;
+    grid-auto-rows: 220px;
+    column-gap: 15px;
+    background-color: azure;
+    margin-top: 20px;
+    row-gap: 15px;
+    overflow-y: hidden;
+    border: none;
+  }
+  .grid .imagens img {
+    height: 220px;
+    background-size: cover;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header {
+    max-width: 425px;
+  }
+  .header .root-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .root-container .nome-microsoft {
+    width: 120px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .header .root-container .logo {
+    height: auto;
+    margin: auto;
+  }
+  .grid {
+    max-width: 425px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 220px 220px 220px;
+    grid-auto-rows: 220px;
+    gap: 15px;
+    background-color: azure;
+    margin-top: 20px;
+    row-gap: 15px;
+    overflow-y: hidden;
+    border: none;
+  }
+  .grid .imagens img {
+    height: 220px;
+    background-size: cover;
+    margin-bottom: 15px;
+  }
+  .conteudo {
+    min-width: 100%;
+  }
+  .conteudo .nav-bar {
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 130px;
+    background-color: grey;
+  }
+  .conteudo .nav-bar .nav {
+    max-width: 100%;
+    margin-right: 30px;
+  }
+  .conteudo .nav-bar .nav .listas {
+    max-width: 100%;
+    margin-right: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .conteudo .nav-bar .nav .listas .list a {
+    width: 100%;
+    font-size: 14px;
+  }
+  .conteudo .nav-bar li {
+    max-width: 425px;
+    flex-wrap: wrap;
+  }
+  .conteudo .nav-bar h1 {
+    margin-left: 30%;
+    font-size: 22px;
+  }
+  .rodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    background-color: beige;
+  }
+  .rodape p {
+    font-family: "Roboto" sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    list-style: none;
+  }
+  .rodape a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
